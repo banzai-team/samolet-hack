@@ -1,0 +1,8 @@
+# it is recommended to specify library versions
+numpy==1.25.2
+torch==2.0.1
+torchvision==0.15.2
+pandas==2.1.0
+opencv-python>=4.6.0
+ultralytics
+--index-url https://download.pytorch.org/whl/cpu --extra-index-url https://pypi.org/simple

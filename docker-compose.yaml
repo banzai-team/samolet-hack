@@ -1,0 +1,9 @@
+services:
+  ml:
+    image: jamakase/ml
+    command: sh -c "python3 solution.py && python3 scorer.py -gtformat xywh"
+    volumes:
+      - ./private/images:/solution/private/images
+      - ./private/labels:/solution/private/labels
+    build:
+      dockerfile: Dockerfile
